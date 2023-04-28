@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 14:04:12 by msharifi          #+#    #+#             */
-/*   Updated: 2023/04/28 15:16:01 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/04/28 16:08:15 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ Fixed::~Fixed(void)
 	return ;
 }
 
-Fixed::Fixed(Fixed &toCopy)
+Fixed::Fixed(const Fixed &toCopy)
 {
 	*this = toCopy;
 	return ;
@@ -39,7 +39,7 @@ void	Fixed::setRawBits(int const raw)
 	_nb = raw;
 }
 
-Fixed	&Fixed::operator = (Fixed const &toCopy)
+Fixed	&Fixed::operator = (const Fixed &toCopy)
 {
 	_nb = toCopy.getRawBits();
 	return (*this);
