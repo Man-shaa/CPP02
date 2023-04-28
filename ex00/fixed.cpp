@@ -6,13 +6,13 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 14:04:12 by msharifi          #+#    #+#             */
-/*   Updated: 2023/04/28 17:00:37 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/04/28 18:23:08 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fixed.hpp"
 
-Fixed::Fixed(void) : _nb(42)
+Fixed::Fixed(void) : _nb(0)
 {
 	(void)_nb;
 	return ;
