@@ -6,11 +6,13 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 14:04:12 by msharifi          #+#    #+#             */
-/*   Updated: 2023/04/28 16:08:15 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/04/28 16:36:35 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fixed.hpp"
+
+const int	Fixed::_bits = 8;
 
 Fixed::Fixed(void) : _nb(42)
 {
