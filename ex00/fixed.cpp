@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 14:04:12 by msharifi          #+#    #+#             */
-/*   Updated: 2023/04/28 14:38:37 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/04/28 15:16:01 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,10 @@ int Fixed::getRawBits(void) const
 void	Fixed::setRawBits(int const raw)
 {
 	_nb = raw;
+}
+
+Fixed	&Fixed::operator = (Fixed const &toCopy)
+{
+	_nb = toCopy.getRawBits();
+	return (*this);
 }
