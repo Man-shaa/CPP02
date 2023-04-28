@@ -5,9 +5,10 @@ SRC_DIR		=	$(shell find . -type d)
 
 vpath %.cpp $(foreach dir, $(SRC_DIR), $(dir):)
 
-HEADER		=	fixed.hpp \
+HEADER		=	fixed.hpp		\
 
-SRCS	 	=	main.cpp \
+SRCS	 	=	main.cpp		\
+				operator.cpp	\
 				fixed.cpp
 
 OBJS		=	$(SRCS:%.cpp=${OBJ_DIR}/%.o)
