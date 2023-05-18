@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 14:04:12 by msharifi          #+#    #+#             */
-/*   Updated: 2023/04/28 19:34:37 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/05/18 17:43:38 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ Fixed::Fixed(const float n) : _nb(roundf(n * (1 << _bits)))
 Fixed::Fixed(const Fixed &toCopy)
 {
 	std::cout << "Copy constructor called" << std::endl;
-	*this = toCopy;
+	if (this != &toCopy)
+		*this = toCopy;
 	return ;
 }
 
