@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 14:34:22 by msharifi          #+#    #+#             */
-/*   Updated: 2023/04/29 17:28:26 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/05/18 18:12:32 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ Fixed	Point::getY(void) const
 {
 	return (_y);
 }
-
 
 bool	Point::bsp(Point const a, Point const b, Point const c, Point const point)
 {
